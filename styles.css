@@ -3,7 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Distribución Global de Proveedores de Adidas</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h2 {
+            color: #333;
+        }
+        .chart {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .definitions {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,18 +53,16 @@
     <div class="container">
         <h2>Distribución Global de Proveedores de Adidas</h2>
         <div class="chart">
-            <div>
-                <h3>Proveedores Primarios</h3>
-                <img src="primary_suppliers.png" alt="Gráfico de Proveedores Primarios">
-            </div>
-            <div>
-                <h3>Licenciatarios</h3>
-                <img src="licensees.png" alt="Gráfico de Licenciatarios">
-            </div>
-            <div>
-                <h3>Proveedores de Procesos Húmedos</h3>
-                <img src="wet_process_suppliers.png" alt="Gráfico de Proveedores de Procesos Húmedos">
-            </div>
+            <h3>Proveedores Primarios</h3>
+            <img src="primary_suppliers.png" alt="Gráfico de Proveedores Primarios">
+        </div>
+        <div class="chart">
+            <h3>Licenciatarios</h3>
+            <img src="licensees.png" alt="Gráfico de Licenciatarios">
+        </div>
+        <div class="chart">
+            <h3>Proveedores de Procesos Húmedos</h3>
+            <img src="wet_process_suppliers.png" alt="Gráfico de Proveedores de Procesos Húmedos">
         </div>
         <div class="definitions">
             <h2>Definiciones</h2>
