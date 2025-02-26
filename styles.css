@@ -23,17 +23,20 @@ h2 {
 }
 
 .chart {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 20px 0;
 }
 
 .chart div {
-    margin-bottom: 20px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    margin: 10px;
+    text-align: center;
 }
 
 .chart img {
     width: 100%;
-    max-width: 100%;
     border: 2px solid black;
     transition: transform 0.3s, filter 0.3s;
 }
@@ -41,22 +44,6 @@ h2 {
 .chart img:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-    .chart {
-        display: flex;
-        justify-content: space-around;
-    }
-    .chart img {
-        max-width: 45%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .chart img {
-        max-width: 30%;
-    }
 }
 
 .definitions {
