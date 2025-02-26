@@ -33,7 +33,7 @@ h2 {
 
 .chart img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     border: 2px solid black;
     transition: transform 0.3s, filter 0.3s;
 }
@@ -48,6 +48,12 @@ h2 {
         display: flex;
         justify-content: space-around;
     }
+    .chart img {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
     .chart img {
         max-width: 30%;
     }
