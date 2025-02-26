@@ -27,15 +27,20 @@ h2 {
     margin: 20px 0;
 }
 
+.chart div {
+    margin-bottom: 20px;
+}
+
 .chart img {
     width: 100%;
     max-width: 300px;
     border: 2px solid black;
-    transition: filter 0.3s;
+    transition: transform 0.3s, filter 0.3s;
 }
 
 .chart img:hover {
     filter: brightness(1.2);
+    transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
