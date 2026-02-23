@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 | Mercados Emergentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Mercados Emergentes</a>
+        <nav class="site-nav" aria-label="Principal">
+            <a href="index.html">Inicio</a>
+            <a href="http://licenciaturas.fca.unam.mx/docs/negocios/plan_2017/asuntos_globales/03_mercados_emergentes.pdf" target="_blank" rel="noopener" onclick="return openPrograma(event);">Programa</a>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <section class="card hero">
+            <p class="eyebrow">Actividad 1</p>
+            <h1>Presentación: Sesión 1</h1>
+            <p class="lead">Objetivo: conocernos mejor y conectar el curso con lo que cada estudiante ya trae sobre Mercados Emergentes.</p>
+            <div class="tag-row">
+                <!--<span class="tag">Duración sugerida: 25 min</span>-->
+                <span class="tag">Modalidad: presentación oral breve</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>¿Qué debe incluir tu presentación?</h2>
+            <ol class="steps">
+                <li>Tu <strong>nombre completo</strong>.</li>
+                <li>El <strong>semestre</strong> que estás cursando.</li>
+                <li>Algo que <strong>ya sabes o crees saber</strong> sobre Mercados Emergentes.</li>
+                <li>Un país, región o industria emergente que te interese explorar durante el semestre.</li>
+                <li>Un dato breve sobre ti: hobby, talento raro, libro/podcast favorito o meta profesional.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Formato sugerido (1 minuto)</h2>
+            <p class="template">
+                “Soy [Nombre completo], voy en [Semestre]. Algo que ya sé sobre Mercados Emergentes es [idea].
+                Me interesa aprender más de [país/industria]. Un dato sobre mí es: [dato personal breve].”
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Contexto del curso</h2>
+            <ul class="course-list">
+                <li><strong>Mercados Emergentes</strong></li>
+                <li>Licenciatura en Negocios Internacionales</li>
+                <li>Facultad de Contaduría y Administración</li>
+                <li>Universidad Nacional Autónoma de México</li>
+                <li>Dr. Jorge Cardiel</li>
+                <li>Semestre 2026-2</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+    <script>
+        function openPrograma(event) {
+            const popup = window.open(
+                "http://licenciaturas.fca.unam.mx/docs/negocios/plan_2017/asuntos_globales/03_mercados_emergentes.pdf",
+                "programaMercados",
+                "popup=yes,width=1000,height=760,menubar=no,toolbar=no,location=yes,status=no,scrollbars=yes,resizable=yes"
+            );
+
+            if (popup) {
+                event.preventDefault();
+                popup.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

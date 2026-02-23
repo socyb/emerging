@@ -2,41 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Distribución Global de Proveedores de Adidas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados Emergentes | Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mercados Emergentes 2025-2 | Jorge Cardiel | Clase 7</h1>
+    <header class="site-header">
+        <a class="brand" href="index.html">Mercados Emergentes</a>
+        <nav class="site-nav" aria-label="Principal">
+            <a href="sesion1.html">Actividad 1</a>
+            <a href="http://licenciaturas.fca.unam.mx/docs/negocios/plan_2017/asuntos_globales/03_mercados_emergentes.pdf" target="_blank" rel="noopener" onclick="return openPrograma(event);">Programa</a>
+        </nav>
     </header>
-    <div class="container">
-        <h2>Distribución Global de Proveedores de Adidas</h2>
-        <div class="chart">
-            <div>
-                <h3>Proveedores Primarios</h3>
-                <img src="primary_suppliers.png" alt="Gráfico de Proveedores Primarios">
+
+    <main class="layout">
+        <section class="card hero">
+            <p class="eyebrow">Universidad Nacional Autónoma de México</p>
+            <h1>Mercados Emergentes</h1>
+            <p class="lead">Espacio base del curso para sesiones, actividades y materiales clave.</p>
+            <div class="cta-row">
+                <a class="button" href="sesion1.html">Ir a Actividad 1</a>
+                <a class="button ghost" href="http://licenciaturas.fca.unam.mx/docs/negocios/plan_2017/asuntos_globales/03_mercados_emergentes.pdf" target="_blank" rel="noopener" onclick="return openPrograma(event);">Ver programa (PDF)</a>
             </div>
-            <div>
-                <h3>Licenciatarios</h3>
-                <img src="licensees.png" alt="Gráfico de Licenciatarios">
-            </div>
-            <div>
-                <h3>Proveedores de Procesos Húmedos</h3>
-                <img src="wet_process_suppliers.png" alt="Gráfico de Proveedores de Procesos Húmedos">
-            </div>
-        </div>
-        <div class="definitions">
-            <h2>Definiciones</h2>
-            <p><strong>Proveedores Primarios:</strong> Fábricas de nivel 1 que ensamblan productos finales de Adidas, como calzado, ropa y accesorios.</p>
-            <p><strong>Licenciatarios:</strong> Empresas que tienen licencia para fabricar y vender productos bajo la marca Adidas, operando independientemente pero cumpliendo con los estándares de calidad y ética de Adidas.</p>
-            <p><strong>Proveedores de Procesos Húmedos:</strong> Proveedores especializados en el tratamiento de textiles, como teñido y acabado de telas, clasificados como proveedores de nivel 2.</p>
-        </div>
-        <div class="download">
-            <p>Descarga el archivo Excel con la lista completa de proveedores: <a href="https://www.adidas-group.com/en/sustainability/transparency/supplier-lists">Lista de Proveedores de Adidas</a></p>
-        </div>
-    </div>
-    <footer>
-        <p>Fuente: <a href="https://www.adidas-group.com/en/sustainability/transparency/supplier-lists" style="color: #fff;">adidas-group.com</a></p>
+        </section>
+
+        <section class="card">
+            <h2>Datos del curso</h2>
+            <ul class="course-list">
+                <li><strong>Programa:</strong> Mercados Emergentes</li>
+                <li><strong>Licenciatura:</strong> Negocios Internacionales</li>
+                <li><strong>Facultad:</strong> Contaduría y Administración</li>
+                <li><strong>Universidad:</strong> Universidad Nacional Autónoma de México</li>
+                <li><strong>Profesor:</strong> Dr. Jorge Cardiel</li>
+                <li><strong>Semestre:</strong> 2026-2</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Dr. Jorge Cardiel · Mercados Emergentes · 2026-2</p>
     </footer>
+    <script>
+        function openPrograma(event) {
+            const popup = window.open(
+                "http://licenciaturas.fca.unam.mx/docs/negocios/plan_2017/asuntos_globales/03_mercados_emergentes.pdf",
+                "programaMercados",
+                "popup=yes,width=1000,height=760,menubar=no,toolbar=no,location=yes,status=no,scrollbars=yes,resizable=yes"
+            );
+
+            if (popup) {
+                event.preventDefault();
+                popup.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
